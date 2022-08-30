@@ -69,7 +69,7 @@ body{
     margin-top: 750px;
 }
 /* blog pages option styles */
-.blog-pages{
+.side-buttons{
     width: 312px;
     height: 312px;
     background-color: cadetblue;
@@ -206,9 +206,18 @@ footer hr {
     margin-top: 50px;
     gap: 50px;
 }
+.social-icon{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 20px;
+    font-size: 32px;
+}
 
 /* media queries section */
-@media only screen and (max-width: 688px) {
+
+/* for mobile devices */
+@media screen and (max-width: 688px) {
     .container{
         width: 100%;
     }
@@ -221,15 +230,32 @@ footer hr {
         grid-template-columns: repeat(1, 1fr);
     }
     .banner{
-        width: 688px;
+        position: absolute;
+        margin-bottom: 0;
+        gap: 0;
+    }
+    .side-buttons{
+        display: grid;
+        justify-content: center;
+        margin-top: 20px;
+        background-color: #FFFFFF;
+        width: 100%;
+        height: auto;
+    }
+    .blog-btn{
+        padding: 5px 10px;
+        border: 1px solid rgba(192, 192, 192, 0.39);
     }
     .blogs{
         position: relative;
         top: 450px;
     }
+    .blog-pages {
+        background-color: none;
+    }
     footer{
         width: 688px;
-        height: 600px;
+        height: 650px;
         top: 5100px;
     }
     footer h2{
@@ -242,5 +268,54 @@ footer hr {
     .footer{
         line-height: 5px;
         margin-top: 20px;
+    }
+}
+
+/* for tablet devices */
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+    .container{
+        width: 100%;
+    }
+    .blog-pages, .blog-field {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .blogs,
+    .footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .banner-title {
+        font-size: 40px;
+        text-align: center;
+    }
+    .blog-pages{
+        display: flex;
+        
+    }
+    .side-buttons {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        background-color: #FFFFFF;
+        width: 100%;
+        height: auto;
+        }
+    .blog-btn {
+        padding: 5px 10px;
+        border: 1px solid rgba(192, 192, 192, 0.39);
+    }
+    .view-all-btn{
+        visibility: visible;
+        top: 2850px;
+    }
+    footer {
+        height: 650px;
+        top: 3100px;
+    }
+    .footer {
+        display: block;
+        justify-content: center;
+        text-align: center;
     }
 }

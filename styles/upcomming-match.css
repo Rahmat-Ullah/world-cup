@@ -189,3 +189,10 @@ footer hr {
     margin-top: 50px;
     gap: 50px;
 }
+.social-icon {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 20px;
+    font-size: 32px;
+}
