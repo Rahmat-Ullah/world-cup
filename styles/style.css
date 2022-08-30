@@ -206,3 +206,41 @@ footer hr {
     margin-top: 50px;
     gap: 50px;
 }
+
+/* media queries section */
+@media only screen and (max-width: 688px) {
+    .container{
+        width: 100%;
+    }
+    .banner, .blogs, .footer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .blog-pages, .blog-field{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .banner{
+        width: 688px;
+    }
+    .blogs{
+        position: relative;
+        top: 450px;
+    }
+    footer{
+        width: 688px;
+        height: 600px;
+        top: 5100px;
+    }
+    footer h2{
+        margin-top: 10px;
+    }
+    footer hr {
+        width: 688px;
+        margin-top: 80px;
+    }
+    .footer{
+        line-height: 5px;
+        margin-top: 20px;
+    }
+}
