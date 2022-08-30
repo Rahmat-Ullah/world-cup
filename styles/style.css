@@ -119,6 +119,7 @@ a{
     width: 312px;
     height: 362px;
     border-radius: 10px;
+    border: 1px solid rgba(192, 192, 192, 0.356);
 }
 .blog-img img{
     width: 100%;
@@ -132,14 +133,19 @@ a{
     border: 1px solid #000;
     padding: 5px 10px;
     border-radius: 5px;
+    margin-left: 10px;
 }
 .blog h4{
     font-size: 18px;
     font-weight: 600;
+    margin-left: 10px;
 }
 .blog p{
     display: flex;
     align-items: center;
+    margin-left: 10px;
+    margin-top: 0;
+    line-height: 0;
     gap: 10px;
     color: rgba(22, 22, 22, 0.7);
 }
