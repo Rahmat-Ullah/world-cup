@@ -65,7 +65,7 @@ body{
 /* blogs section styles */
 .blogs {
     display: flex;
-    gap: 20px;
+    gap: 18px;
     margin-top: 750px;
 }
 /* blog pages option styles */
@@ -113,7 +113,7 @@ a{
 .blog-field{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
+    grid-gap: 18px;
 }
 .blog{
     width: 312px;
@@ -147,3 +147,23 @@ a{
     display: flex;
     gap: 30px;
 }
+/* view all button style */
+.view-all-btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    top: 2000px;
+}
+.view-all-btn a{
+    padding: 16px 25px;
+    text-decoration: none;
+    color: #000;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: gold;
+    border-radius: 5px;
+}
+
